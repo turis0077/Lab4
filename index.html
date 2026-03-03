@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disci-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo">⚔️ Disci-App</div>
+        <div class="xp-container">
+            <div class="xp-label">XP Total</div>
+            <div class="xp-value" id="totalXP">0 XP</div>
+            <div class="rank" id="rank">🌱 Novato</div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="form-card">
+            <h2>Nueva Misión</h2>
+
+            <div class="field">
+                <label>Nombre</label>
+                <input type="text" id="inputNombre" placeholder="Ej: Hacer ejercicio">
+            </div>
+
+            <div class="field">
+                <label>Descripción</label>
+                <textarea id="inputDesc" placeholder="Describe tu misión..."></textarea>
+            </div>
+
+            <div class="field">
+                <label>Dificultad</label>
+                <select id="inputDif">
+                    <option value="Fácil">Fácil – 10 XP</option>
+                    <option value="Normal">Normal – 25 XP</option>
+                    <option value="Difícil">Difícil – 50 XP</option>
+                </select>
+            </div>
+
+            <button onclick="crearMision()">Agregar Misión</button>
+        </div>
+
+        <div class="missions-section">
+            <h2>Mis Misiones</h2>
+            <ul id="listaMisiones"></ul>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
