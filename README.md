@@ -33,8 +33,13 @@ cd disci-app
 ## Estructura
 ```
 disci-app/
-├── index.html
-├── style.css
-├── app.js
+├── html
+    ├──index.html
+├── css
+    ├──styles.css
+├── js
+    ├──app.js
+├── .gitignore
+├── lab4.mp4
 └── README.md
 ```
